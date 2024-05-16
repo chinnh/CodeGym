@@ -9,11 +9,19 @@
 
 <body>
     <h1 id="kq">
-
+        <input type="text" placeholder="Nhập gì đi em" id="a">
+        <button onclick="getData()">Nhập</button>
+        <!-- Onclick là sự kiện nhấn của HTML và thực hiện hành động "getData()" được khai báo bên dưới -->
     </h1>
     <script>
-        let a = prompt("Nhập giá trị đi"); // Hiển thị hộp thoại để người dùng nhập
-        alert(a);
+        function getData(){ //Khai báo 1 hành động gì đó
+            //alert("Huy ngu")
+            let data = document.getElementById("a").value; //Lấy dữ liệu ở input
+            alert(data);
+        }
+
+        //let a = prompt("Nhập giá trị đi"); // Hiển thị hộp thoại để người dùng nhập
+        //alert(a);
 
         //let a = "hello c04";
         //document.getElementById("kq").innerHTML = a;
@@ -48,7 +56,7 @@
 
         //Nhập xuất (input/output) trong js
         //alert("hello"); //Hiển thị lên 1 hộp thoại
-        
+
         //document.write("hello c04"); //Hiển thị lên 1 trang web
         //let a = "hello c04"
         //console.log("hello c04"); //Hiển thị trong f12 => console
