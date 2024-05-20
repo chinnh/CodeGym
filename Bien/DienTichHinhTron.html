@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Nhập bán kính hình tròn" id="r">
+    <button onclick="tinhDT()">Nhập</button>
+    <script>
+        function tinhDT(){
+            let bk = +document.getElementById("r").value;
+            const PI = 3.14;
+            let dt = bk * bk * PI;
+            document.write("Diện tích hình tròn là " + dt);
+        };
+    </script>
+</body>
+</html>

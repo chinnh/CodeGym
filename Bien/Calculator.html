@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <table>
+        <tr>
+            <td><input type="text" placeholder="Nhập số thứ 1" id="a"></td>
+            <td><input type="text" placeholder="Nhập số thứ 2" id="b"></td>
+            <td><button onclick="tong()">Cộng</button></td>
+            <td><button onclick="hieu()">Trừ</button></td>
+        </tr>
+        
+    </table>
+    <br>
+    <p id="c"></p>
+    <script>
+        function tong(){
+            let num1 = +document.getElementById("a").value;
+            let num2 = +document.getElementById("b").value;
+            let kq = num1 + num2;
+            document.getElementById("c").innerHTML = "Kết quả là : " + kq;
+        }
+        function hieu(){
+            let num1 = +document.getElementById("a").value;
+            let num2 = +document.getElementById("b").value;
+            let kq = num1 - num2;
+            document.getElementById("c").innerHTML = "Kết quả là : " + kq;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency </th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="amount">
+            </td>
+            <td>
+                <select id="from">
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>
+                </select>
+            </td>
+            <td>
+                <select id="to">
+                    <option value="USD">USD</option>
+                    <option value="VND">VND</option>
+                </select>
+            </td>
+            <td rowspan="2">
+                <button onclick="doiTien()">Convert</button>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <p id="Tien"></p>
+    <script>
+        function doiTien() {
+            let Amount = document.getElementById("amount").value;
+            let FromC = document.getElementById("from").value;
+            let toC = document.getElementById("to").value;
+            let cd;
+            if (FromC == "USD" && toC == "VND") {
+                cd = Amount * 23000;
+            }
+            else if (FromC == "VND" && toC == "USD") {
+                cd = Amount / 23000;
+            }
+            else if (FromC == "VND") {
+                Result = "Result: " + Amount + " Đ"
+            } else {
+                Result = "Result: " + Amount + " $"
+            }
+            document.getElementById("Tien").innerHTML = "Tiền sau khi chuyển đổi là : " + cd;
+        };
+    </script>
+</body>
+
+</html>

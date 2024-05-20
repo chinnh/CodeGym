@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Hãy nhập điểm lý" id="a">
+    <input type="text" placeholder="Hãy nhập điểm hóa" id="b">
+    <input type="text" placeholder="Hãy nhập điểm sinh" id="c">
+    <button onclick="getData()">Nhập</button>
+    <script>
+        function getData() {
+            let ly = +document.getElementById("a").value;
+            let hoa = +document.getElementById("b").value;
+            let sinh = +document.getElementById("c").value;
+            let dtb = (ly + hoa + sinh) / 3;
+            let sum = ly + hoa + sinh;
+            document.write("Điểm trung bình là " + dtb);
+            document.write("<br>Điểm tổng là " + sum);
+        };
+    </script>
+</body>
+</html>

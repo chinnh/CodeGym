@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Chọn loại xe.</h3>
+    <select id="mySelect" onchange="do_SomeThing()">
+        <option value="Lamborghini">Lamborghini</option>
+        <option value="BMW">BMW</option>
+        <option value="Ferrari">Ferrari</option>
+        <option value="Mercedes">Mercedes</option>
+        <option value="Porsche">Porsche</option>
+    </select>
+    <script>
+        //function do_SomeThing(){
+        //    var selectValue = document.getElementById("mySelect").value;
+        //    alert(selectValue);
+        //}
+         var selectedElement = document.getElementById("mySelect");
+         selectedElement.addEventListener("change", changeFunction);
+         function changeFunction(){
+            var selectValue = document.getElementById("mySelect").value;
+            alert(selectValue);
+         }
+    </script>
+</body>
+</html>

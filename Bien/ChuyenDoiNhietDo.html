@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Độ C" id="c">
+    <button onclick="chuyenDoi()">Nhập</button>
+    <script>
+        function chuyenDoi(){
+            let doC = document.getElementById("c").value;
+            let doF = (9*doC / 5) + 32;
+            document.write("Nhiệt độ trước khi chuyển đổi " + doC + "<br>Nhiệt độ sau khi chuyển đổi " + doF);
+        };
+    </script>
+</body>
+</html>

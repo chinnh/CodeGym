@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Nhập bán kính hình tròn" id="bk">
+    <button onclick="tinhCV()">Nhập</button>
+    <script>
+        function tinhCV(){
+            let r = +document.getElementById("bk").value;
+            const PI = 3.14;
+            let cv = 2 * r * PI;
+            document.write("Chu vi hình tròn là " + cv);
+        };
+    </script>
+</body>
+</html>
