@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const noiMang = 50;
+        const ngoaiMang = 70;
+        const quocTe = 100;
+        const tbCoDinh = 1000;
+        let tienCuoc;
+        let in4 = prompt("Dịch vụ bạn muốn sử dụng");
+        if(in4 === "nội mạng"){
+            tienCuoc = noiMang * tbCoDinh;
+            document.write("Tiền cước của bạn mỗi phút là : " + tienCuoc);
+        }else if(in4 === "ngoại mạng"){
+            tienCuoc = ngoaiMang * tbCoDinh;
+            document.write("Tiền cước của bạn mỗi phút là : " + tienCuoc);
+        }else if(in4 === "quốc tế"){
+            tienCuoc = quocTe * tbCoDinh;
+            document.write("Tiền cước của bạn mỗi phút là : " + tienCuoc);
+        }else{
+            document.write("Vui lòng nhập dịch vụ hợp lệ");
+        }
+    </script>
+</body>
+</html>

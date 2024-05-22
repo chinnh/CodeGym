@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cau Truc Dieu Kien</title>
+</head>
+
+<body>
+    <script>
+        //Toán tử logic : && (và), || (hoặc)
+        //Thi > 5 && đạt phỏng vấn
+        //Toán tử && : chỉ cần 1 cái false sẽ trả về false
+        //Toán tử || : chỉ cần 1 cái true sẽ trả về true
+        /*
+        console.log(true && false);
+        console.log(false && false);
+        console.log(true && true);
+        //Toán tử so sánh
+        */
+        /*
+        let a = 5 < 3; //<  >  <=  >=  ==  !=
+        alert(a);
+        */
+        /*
+        let a = 5;
+        let b = '5';
+        //console.log(a == b); //Chỉ quan tâm giá trị, không quan tâm kiểu dữ liệu
+        //console.log(a === b); //number === string  // === xét cả kiểu dữ liệu và cả giá trị;        
+        console.log(a != b);//Xét giá trị
+        console.log(a !== b);//Xét giá trị hoặc kiểu sữ liệu
+        */
+
+
+        //Cấu trúc câu điều kiện
+        /*
+        let tien = prompt("Nhập số tiền bạn có : ");
+        if(tien > 3000){
+            console.log("Học CodeGym");
+        }else{
+            console.log("Bạn không đủ tiền học");
+        }
+        /
+        if(câu điều kiện){
+            <khối lệnh thực thi>
+        }
+        /
+        console.log("Xin chào bạn");
+        */
+        //Cho nhập vào điểm, nếu > 5 alert ra "Đạt", ngược lại alert "trượt"
+        /*
+        let diem = prompt("Nhập điểm : ");
+        if(diem >= 5){
+            alert("Đạt");
+        }else{
+            alert("Trượt");
+        }
+        */
+        /*
+        //if, if-else, if(Bậc thang)
+        //Cho điều kiện nếu >= 8 log ra giỏi, khoảng 6 đến 8 in ra khá, 5 đến 6 trung bình, < 5 kém
+        let diem = prompt("Nhập điểm");
+        if (diem <= 10 && diem >= 8) {
+            console.log("Giỏi");
+        } else if (diem < 8 && diem >= 6) {
+            console.log("Khá");
+        } else if (diem >= 5 && diem < 6) {
+            console.log("Trung bình");
+        } else if(diem <= 4 && diem >= 0){
+            console.log("Yếu");
+        }else{
+            console.log("Chim cút")
+        }
+        */
+        //IF lồng nhau
+        //Nhập điểm sau đó in ra "hello" nếu điểm nằm trong khoảng 5 đến 10
+        let diem = prompt("Nhập điểm");
+        if(diem >= 5){
+            if(diem <= 10){
+                console.log("hello");
+            }
+        }
+        if(diem <= 5 && diem >= 10){
+            console.log("hello");
+        }
+    </script>
+</body>
+
+</html>

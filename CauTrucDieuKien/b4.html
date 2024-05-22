@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num1 = prompt("Nhập số thứ 1");
+        let num2 = prompt("Nhập số thứ 2");
+        let num3 = prompt("Nhập số thứ 3");
+        if (num1 > num2 && num1 > num3) {
+            document.write("Số thứ 1 là lớn nhất");
+        } else if (num2 > num1 && num2 > num3) {
+            document.write("Số thứ 2 là lớn nhất");
+        } else if (num3 > num1 && num3 > num2) {
+            document.write("Số thứ 3 là số lớn nhất");
+        } else if (num1 > num2 && num2 == num3) {
+            document.write("Số thứ 1 là lớn nhất");
+        } else if (num2 > num3 && num1 == num3) {
+            document.write("Số thứ 2 là lớn nhất");
+        } else if (num3 > num1 && num1 == num2) {
+            document.write("Số thứ 3 là lớn nhất");
+        } else if (num1 == num2 && num2 > num3) {
+            document.write("Số thứ 1 và thứ 2 lớn nhất");
+        } else if (num2 == num3 && num2 > num1) {
+            document.write("Số thứ 2 và thứ 3 lớn nhất");
+        } else if (num3 == num1 && num1 > num2) {
+            document.write("Số thứ 1 và thứ 3 lớn nhất");
+        }
+        else {
+            document.write("Cả 3 số bằng nhau");
+        }
+    </script>
+</body>
+
+</html>

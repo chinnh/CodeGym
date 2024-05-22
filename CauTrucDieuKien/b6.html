@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let doanhSo = prompt("Nhập doanh số");
+        let hoaHong;
+        if(doanhSo < 100 && doanhSo > 0){
+            hoaHong = doanhSo * (5 / 100 );
+            document.write("Hoa hồng là :" + hoaHong);
+        }else if(doanhSo >= 100 && doanhSo < 1000){
+            hoaHong = doanhSo * (7 / 100 );
+            document.write("Hoa hồng là :" + hoaHong);
+        }else if(doanhSo >= 1000 && doanhSo < 5000){
+            hoaHong = doanhSo * (10 / 100 );
+            document.write("Hoa hồng là :" + hoaHong);
+        }else if(doanhSo >= 5000 && doanhSo < 10000){
+            hoaHong = doanhSo * (15 / 100 );
+            document.write("Hoa hồng là :" + hoaHong);
+        }else if(doanhSo < 0){            
+            document.write("Bị đuổi");
+        }else{
+            hoaHong = doanhSo * (40 / 100 );
+            document.write("Hoa hồng là : " + hoaHong);
+        }
+    </script>
+</body>
+</html>

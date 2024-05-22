@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = prompt("Nhập vào giá trị a");
+        let b = prompt("Nhập vào giá trị b");
+        let c = prompt("Nhập vào giá trị c");
+        if (a > b && a > c) {
+            document.write("giá trị a là lớn nhất");
+        } else if (b > a && b > c) {
+            document.write("giá trị b là lớn nhất");
+        } else if (c > a && c > b) {
+            document.write("giá trị c là lớn nhất");
+        } else if (a > b && b == c) {
+            document.write("giá trị a là lớn nhất");
+        } else if (b > c && a == c) {
+            document.write("giá trị b là lớn nhất");
+        } else if (c > a && a == b) {
+            document.write("giá trị c là lớn nhất");
+        } else if (a == b && b > c) {
+            document.write("giá trị a và giá trị b lớn nhất");
+        } else if (b == c && b > a) {
+            document.write("giá trị b và giá trị c lớn nhất");
+        } else if (c == a && a > b) {
+            document.write("giá trị a và giá trị c lớn nhất");
+        }
+        else {
+            document.write("Cả 3 giá trị bằng nhau");
+        }
+    </script>
+</body>
+</html>

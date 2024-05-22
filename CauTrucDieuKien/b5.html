@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let diemKT = prompt("Nhập điểm kiểm tra");
+        let diemGK = prompt("Nhập điểm giữa kỳ");
+        let diemCK = prompt("Nhập điểm cuối kỳ");
+        let diemTB = (diemKT * 2 + diemGK * 3 + diemCK * 4) / 9;
+        if (diemTB <= 10 && diemTB >= 8) {
+            document.write(diemTB + " Giỏi");
+        } else if (diemTB < 8 && diemTB >= 6) {
+            document.write(diemTB + " Khá");
+        } else if (diemTB < 6 && diemTB >= 4) {
+            document.write(diemTB + " Trung bình");
+        } else if (diemTB < 4 && diemTB >= 0) {
+            document.write(diemTB + " Yếu");
+        } else {
+            document.write(diemTB + " Không hợp lệ");
+        }
+    </script>
+</body>
+
+</html>
