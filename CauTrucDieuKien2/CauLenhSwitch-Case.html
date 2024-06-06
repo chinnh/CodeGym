@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Kiểm tra số ngày trong tháng</h1>
+    <p>
+        <input type="number" min="1" max="12" id="thang" placeholder="Nhập tháng">
+        <input type="number" min="1" id="nam" placeholder="Nhập năm">
+        <button onclick="check()">Check</button>
+    </p>
+    <p id="result"></p>
+    <script>
+        function check() {
+            let thang = +document.getElementById("thang").value;
+            let nam = +document.getElementById("nam").value;
+            let dayInMonth;
+            switch (thang) {
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    dayInMonth = 31;
+                    break;                
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    dayInMonth = 30;
+                    break;
+                case 2:
+                    dayInMonth = (nam && ((nam % 4 === 0 && nam % 100 !== 0) || (nam % 400 === 0))) ? 29 : 28;
+                    break;
+                default:
+                    dayInMonth = 0;
+            }
+            document.getElementById("result").innerHTML = "Tháng" + thang + ". Năm" + nam + ". Có" + dayInMonth + " ngày";
+        }
+    </script>
+</body>
+
+</html>

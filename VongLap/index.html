@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vòng lặp</title>
+</head>
+
+<body>
+    <script>
+
+        // break và continue
+        /*
+        for (let i = 0; i <= 1000; i++) {
+            if(i % 2 === 0 ) {
+                continue; // Khi gặp từ continue nó sẽ thực hiện bỏ đoạn code dưới của của vòng lặp hiện tại
+            }
+
+            console.log(i);
+        }
+        // break; // Nfay khi gặp từ khóa break, lập tức dừng vòng lặp gần nhất
+        for(let i = 0; i < 1000; i++) { // i = 1 < 1000 (true>)
+         console.log("Hello world thứ " + i);
+        }
+ 
+        for(<Khởi tạo biến đếm>; <Điều kiện lăp>; <Tăng giảm biến đếm>) {
+             <Khối lệnh thực thi>
+        }
+ 
+        B1: <Khởi tạo biến đếm>
+        B2: Thực hiện kiểm tra <Điều kiến lặp> nếu true thì <Khối lệnh thực thi> sẽ thực hiện, nếu false
+        thì rời vòng lặp.
+        B3: <Tăng giảm biến đếm>
+        B4: Quay lại bước 2 <Điều kiện lặp>
+ 
+ 
+ 
+ 
+          // In ra các số từ a đến b;
+        let a = +prompt("Nhập a: ");
+        let b = +prompt("Nhập b: ");
+        for(let i = a; i <= b; i++) {
+         document.write(i  + " ");
+ 
+          for(;;) { 
+         console.log("Hello");
+     }
+        }
+ 
+ 
+        
+        // Nhập vào N từ prompt. In ra N lần chữ 'Hello'
+         //    let n = +prompt("Nhập vào n: ");
+         //    for(let i = 0; i < n; i++) {
+         //     document.write("Hello ");
+         //    }
+ 
+        */
+
+
+        // while
+        /*
+        while(<Điều kiện lặp>) { *Note: Vòng lặp while sẽ chỉ thực thực thi khi Mđiều kiện> trả về true
+         <Khối lệnh thực thi>
+        } 
+ 
+        let i = 0;
+        while(i <= 1000) {
+         console.log("Hello wordl");
+         i++;
+        }
+        */
+
+
+        // do - while: làm ..... khi <điều kiện>
+        /*
+        let i = 0;
+        do {
+         console.log(i);
+         i++;
+        } while(i < -1000);
+ 
+ 
+        do {
+         <Khối lenh thuc thi>
+        } while(<Điều kiện lặp>)
+ 
+         Dù điều kiện đúng hay sai cunng chạy it nhất 1 lần
+        */
+
+        /*
+        for (let i = 1; i <= 10; i++) { // i = 2
+            for (let j = 1; j <= 10; j++) { // j = 1
+                console.log("Hello"); // "Hello", "Hello",
+            }
+        }
+        */
+
+        // In ra bảng cứu chương
+        /*
+        for(let i = 1; i <= 10; i++) {
+            console.log("");
+            for(let j = 1; j <= 10; j++) {
+                let tich = i * j;
+                console.log(i + " x " + j + " = " + tich);
+            }
+        }
+        */
+
+        for (let i = 10; i >= 0; i--) {
+            console.log(i);
+        }
+
+
+
+    </script>
+</body>
+
+</html>

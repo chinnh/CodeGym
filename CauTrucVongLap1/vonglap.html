@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Vòng lặp : giúp lặp 1 đoạn code
+    while(x){
+        A
+    }
+    x : Điều kiện lặp
+    A : đoạn code
+    A chạy đi chạy khi x true.
+    for(X; y; z){
+        A
+    }
+    y : điều kiện lặp
+    x : thường để khai báo biến đêm
+    z : thường để tông biến đếm
+    A : đọan code
+    continue/break.
+  -->
+    
+    <script>
+        //In ra 1000 lần chữ hello 
+        //1 -> 2 -> 3 -> ... -> Dừng
+        //for(let d = 0; d < 1000; d++){
+        //    document.write("Hello <br/>");
+        //}
+
+        //In ra các số từ 0 -> 999
+        //let dem = 0; //1
+        //while(dem < 1000){ //2
+        //    document.write(dem + "Hello <br/>"); //3
+        //    dem++; //4
+        //}
+
+        //1 -> 2 -> 3 -> ... -> Dừng
+        //for(let d = 0; d < 1000; d++){
+        //   document.write(d + "Hello <br/>");
+        //}
+
+        //In ra các số từ a -> b. a, b nhập vào = prompt
+        //let a = prompt("Nhập vào số a");
+        //let b = prompt("Nhập vào số b");
+        //while(a < b){
+        //    document.write(a + " Hi<br/>");
+        //    a++;
+        //}
+
+        //In ra các số chẵn từ a -> b. a, b nhập vào = prompt
+        //let x = prompt("Nhập vào số x");
+        //let y = prompt("Nhập vào số y");
+        //for(let d = x; d <= y; d++){
+        //    if(d %2 ==0){
+        //        document.write(d + "<br/>");
+        //    }
+        //};
+        
+        //Tính tổng các số từ a -> b : dùng for
+        //let a = +prompt("Nhập vào số a");
+       // let b = +prompt("Nhập vào số b");
+       //let tong = 0;
+        //for(let d = a; d <= b; d++){
+        //    tong = tong + d;
+        //}
+        //document.write("Tổng là : " + tong); 
+
+        /*
+        //Tính tích các số từ a -> b : dùng for
+        let a = +prompt("Nhập vào số a");
+        let b = +prompt("Nhập vào số b");
+        let tich = 1;
+        for(let d = a; d <= b; d++){
+            tich = tich * d;
+        }
+        document.write("Tích là : " + tich);
+        */ 
+        /*
+        //Đếm các số chia hết cho 5 từ a đến b
+        let dem = 0;
+        let a = +prompt("Nhập vào số a");
+        let b = +prompt("Nhập vào số b");
+        for(let d = a; d <= b; d++){
+            if(d %5 === 0){
+                dem++
+            }
+        }
+        document.write("Có : " + dem);
+        */
+         
+        /*
+        //Tính TBC các số chia hết cho 5 từ a -> b
+        let dem = 0;
+        let a = +prompt("Nhập vào số a");
+        let b = +prompt("Nhập vào số b");
+        let tbc;
+        let tong=0;
+        for (let d = a; d <= b; d++) {
+            if (d % 5 === 0) {
+                tong = d + tong;
+                dem++;  
+            } 
+            
+        }
+        tbc = tong/dem;
+        document.write( tbc )
+        */
+        let a = +prompt("Nhập vào số");
+        let kq = "Là số nguyên tố.";
+        for(let i = 2; i < a; i++){
+            if(a %i == 0){
+                kq = "Không phải số nguyên tố.";
+            }
+        }
+        document.write(kq);
+    </script>
+</body>
+</html>

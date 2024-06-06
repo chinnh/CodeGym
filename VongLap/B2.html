@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let chuoi = prompt("Nhập bất cứ thứ gì bạn muốn");
+        let words = chuoi.trim().split(/\s+/).length;
+        let characters = chuoi.replace(/\s/g, '').length;
+
+        document.write("Số từ trong chuỗi là : " + words + ". Số ký tự trong chuỗi là : " + characters);
+    </script>
+</body>
+
+</html>

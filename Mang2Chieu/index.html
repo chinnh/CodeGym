@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = [ //Mảng 2 chiều là mảng có các phần tử là các mảng con
+            [1, 2, 4],
+            [5, 6, 87],
+            [6, 9, 21]
+        ];
+        //console.log(arr[0][2]); //Hàng 0, cột 2
+        /*
+        for (i = 0; i < arr.length; i++) {
+            for (j = 0; j < arr[i].length; j++) {
+                console.log(arr[i][j]);
+            }
+        }
+        */
+
+        /*
+        let max = arr[0][0];
+        for (i = 0; i < arr.length; i++) {
+            for (j = 0; j < arr[i].length; j++) {
+                if(arr[i][j] > max){
+                    max = arr[i][j];
+                }
+            }
+        }
+        console.log("Phần tử lớn nhất của mảng 2 chiều là : " + max);
+        */
+        //Tìm max hàng
+        for (i = 0; i < arr.length; i++) {
+            let max = arr[i][0];
+            for (j = 0; j < arr[i].length; j++) { //Duyệt cột nằm trong hàng i
+                if (arr[i][j] > max) {
+                    max = arr[i][j];
+                }
+            }
+            console.log("Max hàng " + i + " là : " + max);
+        }
+        
+    </script>
+</body>
+
+</html>

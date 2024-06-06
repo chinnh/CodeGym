@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let nhietDo = +prompt("Nhiệt độ hiện tại là");
+        if (nhietDo > 100 || nhietDo < 20) {
+            alert("Điều chỉnh lại nhiệt độ");
+            let dieuChinh = +prompt("Nhiệt độ điều chỉnh");
+            document.write("Nhiệt độ sau khi điều chỉnh : " + dieuChinh);
+        } else {
+            document.write("Nhiệt độ phù hợp :" + nhietDo);
+        }
+    </script>
+</body>
+
+</html>

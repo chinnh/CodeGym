@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Tính chỉ số cân nặng</h1>
+    <p>Nhập cân nặng : (Kg) <input type="number" id="canNang"></p>
+    <p>Nhập chiều cao : (Cm) <input type="number" id="chieuCao"></p>
+    <button onclick="kt()">Kiểm tra</button>
+    <p id="result"></p>
+    <script>
+        function kt() {
+            let canNang = document.getElementById("canNang").value;
+            let chieuCao = document.getElementById("chieuCao").value;
+            let bmi = canNang / ((chieuCao / 100) * (chieuCao / 100));
+            if (bmi < 18) {
+                document.getElementById("result").innerHTML = "Chỉ số BMI của bạn là : " + bmi + ". You are Underweight";
+            } else if (bmi >= 18 && bmi < 25) {
+                document.getElementById("result").innerHTML = "Chỉ số BMI của bạn là : " + bmi + ". You are Normal";
+            } else if (bmi >= 25 && bmi < 30) {
+                document.getElementById("result").innerHTML = "Chỉ số BMI của bạn là : " + bmi + ". You are Overweight";
+            } else if (bmi >= 30) {
+                document.getElementById("result").innerHTML = "Chỉ số BMI của bạn là : " + bmi + ". You are Obese";
+            }            
+        }
+
+    </script>
+</body>
+
+</html>

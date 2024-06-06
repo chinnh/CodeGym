@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <button onclick="showhello()">Nhấn</button> -->
+    <script>
+        /*
+        Hàm (Phương thức) : là 1 nhóm các câu lệnh có nhiệm vụ thực hiện 1 chức năng nào đó ở trong chương trình.
+        Function (Method)
+
+        function <tên hàm>(){
+            }
+        - Tên hàm sẽ là động từ.
+
+
+        function showhello() { //KHAI BÁO hàm
+            let name = " Nguyễn Hữu Chinh";
+            alert("Xin chào " + name);
+        }
+        showhello(); // Đây là cách GỌI hàm<tên hàm>();
+            // Hàm có thể sử dụng để tương tác với HTML thông qua các sự kiện(onclick, onchange, ...)
+        */
+
+        // Các loại hàm
+        /*
+        function showhello(name) { //Trong ngoặc tròn là danh sách các "THAM SỐ" được truyền vào hàm
+            //Các tham số đơn giản là các biến đại diện cho dữ liệu truyền vào hàm và cách nhau bởi dấu ,
+            //Có thể không có hoặc có nhiều tham số trong 1 hàm
+            alert("Xin chào " + name);
+        }
+        showhello("Nguyễn Hữu Chinh"); //Khi gọi hàm có bao nhiêu tham số => truyền bấy nhiêu dữ liệu
+        showhello("C04JV"); //Dữ liệu thực tế truyền vào hàm là "ĐỐI SỐ"
+        */
+        /*
+        //Viết 1 hàm nhận vào 2 tham số và alert ra tích của chúng. Gọi hàm truyền vào (4,5) và (2,10)
+        function tinhtich(a, b) {
+            let tich = a * b;
+            alert("Tích là " + tich);
+        }
+        tinhtich(4, 5);
+        tinhtich(2, 10);
+        */
+
+        /*
+        // Hàm có giá trị TRẢ VỀ (sử dụng từ khóa "return")
+        function getAvg(a, b) {
+            let tong = a + b;
+            let avg = tong / 2;
+            return avg;
+        }
+        let c = getAvg(8, 10);
+        c = c + 10;
+        let d = getAvg(10, 12);
+        d = d * 2;
+        document.write(c, d);
+        */
+
+        /*
+        //Khi gặp từ khóa return thì ngay lập tức nó dừng hàm và trả về giá trị
+        // 1 hàm có thể trả về duy nhất 1 giá trị
+        function showhello(){
+            let a = 1;
+            while(true){
+                a++;
+                return a;
+            }
+        }
+        let a = showhello();
+        document.write(a);
+        */
+
+        /*
+        function a() {
+            for (i = 0; i < 3; i++) {
+                for (j = 1; j < 5; j++) {
+                    document.write(j);
+                    //break; //Dừng vòng lặp gần nhất
+                    return 10; //Chỉ có thể tồn tài trong hàm
+                }
+            }
+        }
+        a();
+        */
+
+        /*
+        function go(){
+            return; // Dừng hàm và không trả về giá trị
+        }
+        let a = go();
+        document.write(a);
+        */
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>You must LOVE me</title>
+    
+</head>
+
+<body>
+    <h2>Do You Love Me</h2>
+    <input type="button" value=" YES " onclick="yes()" style="position:absolute;"/>
+    <input type="button" id="btnNo" value="  NO  " onmouseover="noHover()" style="position:absolute;"/>
+    <script type="text/javascript">
+        function yes() {
+            alert("I Love You Too <3");
+        };
+        function noHover() {
+            var x = Math.round(Math.random() * window.innerWidth);
+            var y = Math.round(Math.random() * window.innerHeight);
+            document.getElementById("btnNo").style.left = x + "px";
+            document.getElementById("btnNo").style.top = y + "px";
+        };
+    </script>
+</body>

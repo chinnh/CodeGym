@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        //KN : Mảng là 1 biến đặc biệt có thể chưa nhiều giá trị
+        //let a = ['a', 1, true, false];\
+        //Cách khai báo 2 : let number2 = new Array(4, 5, 8, 10);
+        let number = [4, 5, 8, 10];
+        //Chỉ số của mảng : 0 1 2 3
+        //Phần tử trong mảng : Giá trị nằm tại một vị trí nào đó trong mảng
+        console.log(number[1]); //Giá trị in ra là 5
+        //Độ dài của mảng : Số lượng phần tử có trong mảng
+        console.log("Số lượng phần tử có trong mảng : " + number.length); //4
+        //Cách để duyệt mảng 
+        for (i = 0; i < number.length; i++) {
+            console.log("Phần tử tại vị trí " + i + " là :" + number[i]);
+        }
+        */
+        //Các hàm tương tác với mảng
+        let number = [4, 5, 8, 10];
+        //Thêm phần tử vào cuối mảng
+        //number.push(200);
+        //console.log(number);
+
+        //Xóa phần tử ở cuối mảng
+        //number.pop();
+        //console.log(number);
+
+        //Trả về 1 chuỗi, có thể sửa lại ký hiệu cách nhau giữa các phần tử
+        //console.log(number.join("-------"));
+
+        //Xóa phần tử ở vị trí bất kỳ trong mảng
+        //number.splice(2, 1); //Vị trí bắt đầu xóa, số lượng phần tử muốn xóa        
+        //console.log(number);
+        number.splice(2, 1, 21); //Có thể sử dụng splice để chèn thêm hoặc sửa phần tử bất kỳ
+        console.log(number);
+        
+    </script>
+</body>
+
+</html>

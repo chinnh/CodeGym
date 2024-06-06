@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let nFeet = +prompt("Nhập giá trị của feet");
+        let nMet = +prompt("Nhập giá trị của met");
+        function feetToMeter(nFeet) {
+            let nMet = 0.305 * nFeet;
+            return nMet;
+        }
+        function meterToFeet(nMet) {
+            let nFeet = 3.279 * nMet;
+            return nFeet;
+        }
+        document.write(nFeet + " Sau khi chuyển đổi là " + feetToMeter(nFeet));
+        document.write("</br>")
+        document.write(nMet + " Sau khi chuyển đổi là " + meterToFeet(nMet));
+    </script>
+</body>
+
+</html>

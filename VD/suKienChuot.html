@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tittle</title>
+</head>
+
+<body>
+        <img id="ball" src="https://www.badensports.com/cdn/shop/products/SMA-01_2000x.jpg?v=1629409085" style="width: 300px">
+        <p>Click button để di chuyển quả bóng</p>
+        <button type="button" onclick="moveRight()">Click đi</button>
+    <script>
+        let imgBall = null;
+        imgBall = document.getElementById('ball');
+        function init() {
+            imgBall = document.getElementById('ball');
+            imgBall.style.position = 'relative';
+            imgBall.style.left = '0px';
+        }
+        
+        function moveRight() {
+            console.log(parseInt(imgBall.style.left))
+            imgBall.style.left = parseInt(imgBall.style.left) + 10 + 'px';
+        }
+        window.onload = init;
+    </script>
+</body>
+
+</html>

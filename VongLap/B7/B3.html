@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>        
+        let sequence = [0, 1];
+        for(i = 2; i <= 20; i++){
+            sequence.push(sequence[i - 1] + sequence[i - 2]);
+        }
+        document.write("Dãy Fibonacci là : " + sequence);
+    </script>
+</body>
+</html>

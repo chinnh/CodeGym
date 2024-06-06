@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let number = +prompt("Nhập số cần check");
+        function isPrime() {
+            let a = 0;
+            let isPrime = false;
+            if (number == 0) {
+                alert(number + " Không phải là số nguyên tố");
+            } else {
+                for (i = 1; i <= number; i++) {
+                    if (number % i == 0) {
+                        a += 1;
+                    }
+                }
+                if (a == 2) {
+                    isPrime = true;
+                }
+
+                if (isPrime) {
+                    alert(number + " Là số nguyên tố")
+                } else {
+                    alert(number + " Không phải là số nguyên tố")
+                }
+            }
+        }
+        isPrime(number);
+    </script>
+</body>
+
+</html>

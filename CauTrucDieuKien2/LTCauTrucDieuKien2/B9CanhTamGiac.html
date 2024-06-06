@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = +prompt("Nhập cạnh a");
+        let b = +prompt("Nhập cạnh b");
+        let c = +prompt("Nhập cạnh c");
+        if (a > 0 && b > 0 && c > 0) {
+            if (a + b > c && b + c > a && a + c > b) {
+                document.write("3 cạnh a, b, c là 3 cạnh của tam giác")
+            } else {
+                document.write("3 cạnh a, b, c không phải là 3 cạnh của tam giác");
+            }
+        }else{
+            document.write("3 cạnh của tam giác phải là số dương"); 
+        }
+    </script>
+</body>
+
+</html>
