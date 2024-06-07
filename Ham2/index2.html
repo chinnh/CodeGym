@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Add New Product</h1>
+    <input type="text" placeholder="New Product"> <button> Save</button>
+    <h1>Display All Product</h1>
+    <table border="1" id="list">
+        <tr>
+            <td>Tên</td>
+            <td colspan="2">Hành Động</td>
+        </tr>
+        <tr>
+            <td>Bánh</td>
+            <td><button>Sửa</button></td>
+            <td><button>Xóa</button></td>
+        </tr>
+    </table>
+    <script>
+        let listProduct = ["Bánh cáy", "Bánh mì", "Kẹo bông gòn", "Cơm"];
+        function showAll() {
+            let html = `
+            <tr>
+                <td>Tên</td>
+                <td colspan="2">Hành Động</td>
+            </tr>
+            `;
+            for (i = 0; i < listProduct.length; i++) {
+                html += `<tr>
+                <td>${listProduct[i]}</td>
+                    <td><button>Sửa</button></td>
+                    <td><button>Xóa</button></td>
+                </tr>
+            `;
+            }
+            document.getElementById("list").innerHTML = html;
+        }
+        showAll();
+    </script>
+</body>
+
+</html>

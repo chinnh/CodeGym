@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function dich(tu) {
+            let tiengAnh = ["dog", "cat", "banana", "go", "number"];
+            let tiengViet = ["chó", "mèo", "chuối", "đi", "số"];
+            let viTriTu = -1;
+            for (i = 0; i < tiengAnh.length; i++) {
+                if (tu === tiengAnh[i]) {
+                    viTriTu = i;
+                    break;
+                }
+            }
+            let tuCanTim = tiengViet[viTriTu];
+            return tuCanTim;
+        }
+        let tuCanTim = prompt("Nhập tiếng Anh ");
+        let ketQua = dich(tuCanTim);
+        alert("Tiếng Việt là : " + ketQua);
+    </script>
+</body>
+
+</html>
