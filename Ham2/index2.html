@@ -9,7 +9,7 @@
 
 <body>
     <h1>Add New Product</h1>
-    <input type="text" placeholder="New Product"> <button> Save</button>
+    <input type="text" placeholder="New Product" id="newProduct"> <button onclick="add()"> Add</button>
     <h1>Display All Product</h1>
     <table border="1" id="list">
         <tr>
@@ -24,6 +24,31 @@
     </table>
     <script>
         let listProduct = ["Bánh cáy", "Bánh mì", "Kẹo bông gòn", "Cơm"];
+        function add() {
+            let newProduct = document.getElementById("newProduct").value;
+            listProduct.push(newProduct);
+            showAll();
+        }
+        function remove(index) {
+            let isConfirm = confirm("Bạn có chắc chắn muốn xóa không ?");
+            if (isConfirm) {
+                listProduct.splice(index, 1);
+                showAll();
+            }
+
+        }
+        function showEdit(index) {            
+            let oldProduct = listProduct[index];
+            document.getElementById("newProduct").value = oldProduct;
+            document.getElementById("btn").innerHTML = `<button onclick = "edit(${index})>Edit</button>`
+        }
+        function edit(index){
+            let newProduct = document.getElementById("newProduct").value;
+            listProduct[index] = newProduct;
+            showAll();
+            document.getElementById("btn").innerHTML = `<button onclick="add()"> Add</button>`
+            document.getElementById("newProduct".value) = "";
+        }
         function showAll() {
             let html = `
             <tr>
@@ -34,8 +59,8 @@
             for (i = 0; i < listProduct.length; i++) {
                 html += `<tr>
                 <td>${listProduct[i]}</td>
-                    <td><button>Sửa</button></td>
-                    <td><button>Xóa</button></td>
+                    <td><button onclick = "showEdit(${i})">Sửa</button></td>
+                    <td><button onclick="remove(${i})">Xóa</button></td>
                 </tr>
             `;
             }

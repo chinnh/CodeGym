@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let number = +prompt("Nhập vào 1 số");
+        function giaiThua(a) {
+            if (a === 0) {
+                return 1;
+            }
+            return a * giaiThua(a - 1);
+        }
+        document.write("Giai thừa của số vừa nhập là ");
+        document.write(giaiThua(number));
+    </script>
+</body>
+
+</html>

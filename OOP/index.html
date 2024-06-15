@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Person { //Khai báo lớp : Là bản mô tả chung về đặc điểm và hành động của các đối tượng
+            age; // Các đặc điểm (Thuộc tính) chung của các đối tượng Person
+            gender;
+            name;
+            constructor(ageInput, genderInput, nameInput) { //hàm tạo có nhiệm vụ tạo các đối tượng từ lớp
+                this.name = nameInput;
+                this.gender = genderInput;
+                this.age = ageInput;
+            }
+            go(den) { //Các hành động (Phương thức) chung của các đối tượng Person
+                console.log(this.name + " Đang đi đến " + den);
+            }
+
+        }
+        // Đối tượng (object) : là các thực thể chi tiết tạo ra từ lớp.
+        let nguoi = new Person(18, "Nam", "Chinh");
+        document.write("Tên là : " + nguoi.name);
+        nguoi.go("Codegym");
+    </script>
+</body>
+
+</html>
