@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Management</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid rgba(222, 161, 135, 0.662);
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: rgba(0, 0, 255, 0.249);
+        }
+
+        img {
+            max-width: 200px;
+            height: auto;
+            border: 1px solid #000;
+        }
+
+        form#form-book {
+            margin-bottom: 20px;
+        }
+
+        form#form-book label {
+            display: inline-block;
+            width: 100px;
+            margin-bottom: 10px;
+        }
+
+        form#form-book input {
+            width: 200px;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form#form-book button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        form#form-book button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Book Management</h1>
+    <form id="form-book">
+        <label for="id">ID:</label>
+        <input type="text" id="id"><br>
+        <label for="title">Title:</label>
+        <input type="text" id="title"><br>
+        <label for="author">Author:</label>
+        <input type="text" id="author"><br>
+        <label for="price">Price:</label>
+        <input type="text" id="price"><br>
+        <label for="img">Image URL:</label>
+        <input type="text" id="img"><br>
+        <button type="button" onclick="add()">Add</button>
+    </form>
+    <div id="btn-save"></div>
+    <img id="img-edit" style="display:none;" alt="Book Image">
+    <table id="table-books"></table>
+    <script src="book.js"></script>
+    <script src="store.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

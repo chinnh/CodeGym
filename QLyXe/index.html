@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý xe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-image">
+        <div class="content">
+            <h2>Quản lý xe</h2>
+            <input type="text" placeholder="Loại xe" id="loaiXe">
+            <br>
+            <input type="text" placeholder="Mã xe" id="maXe">
+            <br>
+            <input type="text" placeholder="Tên xe" id="tenXe">
+            <br>
+            <input type="text" placeholder="Tên chủ sở hữu" id="tenChuSoHuu">
+            <br>
+            <input type="text" placeholder="Biển số" id="bienSo">
+            <br>
+            <input type="text" placeholder="Màu xe" id="mauXe">
+            <br>
+            <input type="text" placeholder="Năm đăng ký" id="namDangKy">
+            <br>
+            <input type="text" placeholder="Số khung" id="soKhung">
+            <br>
+            <input type="text" placeholder="Số máy" id="soMay">
+            <br>
+            <img src="" alt="" id="img-edit" style="display: none;">
+            <div id="btn-save">
+                <button onclick="add()">Add</button>
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <h1>Danh Sách Quản Lý</h1>
+    <table border="1" id="tableProduct"></table>
+    <script src="Product.js"></script>
+    <script src="xe.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

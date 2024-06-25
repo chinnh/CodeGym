@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Quản Lí Xe</h1>
+      <input type="number" placeholder="Id" name="" id="id" />
+      <input type="text" placeholder="Tên Xe" name="" id="name" />
+      <input type="text" placeholder="Giá Xe" name="" id="price" />
+      <input type="text" placeholder="Ảnh" name="" id="img" />
+      <input type="text" placeholder="Biển Xe" name="" id="bienxe" />
+      <input type="text" placeholder="Chủ Xe" name="" id="tenchu" />
+      <input type="text" placeholder="Màu" name="" id="mau" />
+    </div>
+    <div id="btn-save">
+      <button onclick="add()">Add</button>
+
+      <br />
+      <h2>Danh Sách Xe</h2>
+      <table border="1" id="table-product"></table>
+    </div>
+    <script src="Product.js"></script>
+    <script src="Store.js"></script>
+    <script src="Main.js"></script>
+  </body>
+</html>
