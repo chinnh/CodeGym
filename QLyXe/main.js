@@ -8,7 +8,7 @@ let p1 = new Product(
   "Đen",
   "2022",
   "KH123456",
-  "M123456"
+  "1212412"
 );
 let p2 = new Product(
   "xe máy",
@@ -19,7 +19,7 @@ let p2 = new Product(
   "Trắng",
   "2021",
   "KH654321",
-  "M654321"
+  "14124"
 );
 let p3 = new Product(
   "xe đạp",
@@ -30,7 +30,7 @@ let p3 = new Product(
   "Vàng",
   "2023",
   "KH112233",
-  "M112233"
+  "124124"
 );
 myCaseStudy.addCar(p1);
 myCaseStudy.addCar(p2);

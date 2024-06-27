@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function nhap(a1, b1, a2, b2) {
+            return (a1 * b2) === (a2 * b1);
+        }
+        let a1 = +prompt("Nhập tử số của phân số thứ nhất:");
+        let b1 = +prompt("Nhập mẫu số của phân số thứ nhất:");
+        let a2 = +prompt("Nhập tử số của phân số thứ hai:");
+        let b2 = +prompt("Nhập mẫu số của phân số thứ hai:");
+        if (nhap(a1, b1, a2, b2)) {
+            alert("Hai phân số bằng nhau.");
+        } else {
+            alert("Hai phân số không bằng nhau.");
+        }
+    </script>
+</body>
+
+</html>

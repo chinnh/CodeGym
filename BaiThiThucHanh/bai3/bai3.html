@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="tb">
+        <input type="text" placeholder="Mã Sổ" id="maSo" maxlength="5">
+        <br>
+        <input type="text" placeholder="Loại Tiết Kiệm" id="loaiTietKiem" maxlength="10">
+        <br>
+        <input type="text" placeholder="Họ Tên Khách Hàng" id="hoTen" maxlength="30">
+        <br>
+        <input type="number" placeholder="Chứng Minh Nhân Dân" id="cmnd">
+        <br>
+        <input type="date" placeholder="Ngày Mở Sổ" id="ngayMo">
+        <br>
+        <input type="number" placeholder="Số Tiền Gửi" id="soTien">
+        <br>
+        <button onclick="add()">Add</button>
+    </div>
+
+    <h1>Danh Sách Sổ Tiết Kiệm</h1>
+    <table border="1" id="tableProduct"></table>
+    <script src="product.js"></script>
+    <script src="soTietKiem.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
